@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I am<span> Bilaval Kaur</span><br></h1>
+                    <p>A Junior Chemical Engineering Student at TIET</p>
+                </div>
+            </div>
+        </div>
+       
+      <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.PNG" class="about-image">
+                    <div class="overlay-text">
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p>I am a junior engineering student at Thapar Institute of Engineering and Technology, Patiala, with a strong focus on chemical engineering and its practical applications in solving real-world problems. My educational journey has equipped me with robust leadership and team management skills, which I actively apply in my academic and extracurricular pursuits. <br>
+
+                        I am passionate about exploring innovative solutions in chemical engineering, leveraging my technical skills to make a meaningful impact. Beyond my academic interests, I have a strong passion for basketball, having competed at the national level. This experience has instilled in me a spirit of teamwork, discipline, and perseverance. Additionally, I enjoy photography, capturing moments that reflect the beauty and complexity of the world around us.<br>
+                        
+                        In my free time, I indulge in poetry and pleasure writing, painting, and reading, which allow me to express my creativity and unwind. I want the world to see chemical engineering as the vast, diverse, and fun branch it truly is, despite its hardships. Through my work, I aim to highlight the exciting and multifaceted nature of this field, showcasing its potential to drive innovation and improve lives.<br>
+                        
+                        I am eager to leverage my engineering skills and creative interests to contribute to innovative projects and meaningful solutions. Open to opportunities that challenge me and allow me to grow, I am committed to making a positive impact through my work.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab(event, 'Skills')">Skills</p>
+                            <p class="tab-links active-link" onclick="openTab(event, 'Societies/Clubs')">Societies/Clubs</p>
+                            <p class="tab-links active-link" onclick="openTab(event, 'Education')">Education</p>
+                        </div>
+                       <div class="tab-contents active-tab" id="Skills"> 
+                        <ul>
+                            <li><span>Coding</span><br>C, Python, HTML, CSS, Arduino IDE</li>
+                            <li><span>CAD</span><br>AutoCAD, Solidworks, Eagle PCB, Autodesk EAGLE, Autodesk Tinkercad, NI Multisim</li>
+                            <li><span>Creativity</span><br>Canva, Adobe Photoshop, Lightroom, WordPress</li>
+                            <li><span>Digital Marketing</span><br>JMP</li>
+                        </ul>
+
+                       </div> 
+                       <div class="tab-contents" id="Societies/Clubs"> 
+                        <ul>
+                            <li><span>Saturnalia, Thapar's Techno-Cultural Festival</span><br>Core Member</li>
+                            <li><span>URJA TIET, Thapar's Annual Sports Festival</span><br>Core Member</li>
+                            <li><span>Thapar Fitness Club</span><br>Core Member</li>
+                            <li><span>SSA Virsa</span><br>Team Member</li>
+                            <li><span>Thapar Amateur Astronomers Society</span><br>Team Member (2022-2023)<br>Core Member(2023-2024)</li>
+                        </ul>
+
+                       </div>
+                       <div class="tab-contents" id="Education"> 
+                        <ul>
+                            <li><span>Thapar Institute of Engineering and Technology</span><br>Chemical Engineering (2022-2026)</li>
+                            <li><span>Guru Nanak Public School, Chandigarh(2020-2022)</span><br>Senior Secendary Education</li>
+                            <li><span>manav mangal Smart School, Mohali</span><br>Secondary Education</li>
+                        </ul>
+
+                       </div> 
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <a href="academics.html">
+                        <img src="images/my work.PNG" alt="Academics">
+                        <div class="layer">
+                            <h3>ACADEMICS</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="sports.html">
+                        <img src="images/work 2.PNG" alt="Sports">
+                        <div class="layer">
+                            <h3>SPORTS</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="photography.html">
+                        <img src="images/work3.PNG" alt="Photography">
+                        <div class="layer">
+                            <h3>PHOTOGRAPHY</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="writing.html">
+                        <img src="images/academics/photo10.jpeg" alt="Writing">
+                        <div class="layer">
+                            <h3>WRITING</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <a href="digitaldiary.html">
+                        <img src="images/academics/photo3.jpeg" alt="Digital Diary">
+                        <div class="layer">
+                            <h3>DIGITAL DIARY</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:bkaur_be22@thapar.edu">bkaur_be22@thapar.edu</a></p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7087320882</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/bilaval-kaur" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bilavalkaur?igsh=OW5iYm1hbzk2bmZ4" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Bilaval Kaur <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+      </div>
+      <script>
+        function openTab(evt, tabName) {
+            var i, tablinks, tabcontents;
+            tabcontents = document.getElementsByClassName("tab-contents");
+            for (i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+            tablinks = document.getElementsByClassName("tab-links");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            document.getElementById(tabName).classList.add("active-tab");
+            evt.currentTarget.classList.add("active-link");
+        }
+      </script>
+      <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+      </script>
+
+    </body>
+</html>

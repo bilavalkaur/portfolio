@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #ffffff90(119, 56, 56, 0)
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-image: url('images/academics/digitaldiarybg.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align:left;
+    padding: 100px 20px;
+    position: relative;
+    background-repeat: repeat;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.content {
+    background-color: #d19c9c;
+    padding: 50px 0;
+}
+
+.entry {
+    background-color: #7e6c7990;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry.large-entry {
+    grid-column: span 2;
+}
+
+.entry h2 {
+    color: #ff0080;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.entry p, .entry blockquote {
+    color: #000000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.entry img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #2e2e2e;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    color: #ababab;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        padding: 50px 10px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .entry img {
+        max-width: 100%;
+    }
+}
+
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Visual Diary</h1>
+            <p>I capture the views that resonate with my perspective and love capurting images that embark a sense of positivity in the viewer.</p>
+        </div>
+    </header>
+    <br>
+    <br>
+    <!--<header class="header">
+        <div class="container">
+            <h1>Digital Diary</h1>
+            <p>Welcome to my digital diary where I share my random thoughts, quotes, and photos. Dive into my world!</p>-->
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="entry large-entry">
+                <h2>Random Entry Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                <img src="images/random1.jpg" alt="Random Image 1">
+            </div>
+            <div class="entry small-entry">
+                <h2>Quote of the Day</h2>
+                <blockquote>"The best way to predict the future is to invent it." - Alan Kay</blockquote>
+                <img src="images/random2.jpg" alt="Random Image 2">
+            </div>
+            <div class="entry small-entry">
+                <h2>Another Random Entry</h2>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</p>
+                <img src="images/random3.jpg" alt="Random Image 3">
+            </div>
+            <!-- Add more entries as needed -->
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>Designed by Bilaval Kaur &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
